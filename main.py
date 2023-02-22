@@ -1,5 +1,3 @@
-
-
 from binarytree import Node
 import graphviz
 import ast
