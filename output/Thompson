@@ -1,0 +1,24 @@
+// AFN
+digraph {
+	rankdir=LR size=15
+	label="
+AFN: McNaughton-Yamada-Thompson"
+	fontsize=20
+	node [shape=circle]
+	S1 [label="S₁"]
+	S2 [label="S₂"]
+	S1 -> S2 [label=0]
+	S2 [label="S₂"]
+	S4 [label="S₄"]
+	S2 -> S4 [label=0]
+	S5 [label="S₅"]
+	S1 [label="S₁"]
+	S5 -> S1 [label="ε"]
+	S6 [label="S₆" shape=doublecircle]
+	S4 [label="S₄"]
+	S4 -> S6 [label="ε"]
+	S5 -> S6 [label="ε"]
+	S4 -> S1 [label="ε"]
+	S0 [label="S₀"]
+	S0 -> S5 [label="ε"]
+}
