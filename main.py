@@ -2,6 +2,9 @@ from binarytree import Node
 import graphviz
 import ast
 
+
+
+
 class Arbol:
     def __init__(self, valor, izquierda = None, derecha = None):
         self.valor = valor
